@@ -12,9 +12,9 @@ export class HomeComponent implements OnInit {
   myform!: any;
   ngOnInit(): void {
     this.myform = new FormGroup({
-      'phone': new FormControl('', Validators.required),
-      'selectbox': new FormControl('', Validators.required),
-      'email': new FormControl('', Validators.required)
+      'phone': new FormControl(''),
+      'selectbox': new FormControl(''),
+      'email': new FormControl('')
     })
     
 
