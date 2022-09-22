@@ -1,0 +1,59 @@
+
+<div class="main">
+  <div class="form-group-area">
+    <div class="form-area">
+      <div class="form-area-content">
+        <div class="company-name">
+          <div class="icon">
+            <img src="../assets/img/steering-wheel.svg" alt="">
+          </div> <p>CARS</p>
+        </div>
+
+        <form [formGroup]="myform" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+              <label for="phone">Əlaqə nömrəsi:</label><br>
+              <input type="tel" id="phone" name="phone" formControlName="phone" placeholder="123-45-678" required >
+
+
+                
+          </div>
+      
+          <br>
+      
+          <div class="form-group">
+            <label for="selectbox" >Səbəb:</label> <br>
+            <select id="sb" name="sb" formControlName="selectbox" >
+              <option value="sebeb1">Səbəb 1</option>
+              <option value="sebeb2">Səbəb 2</option>
+              <option value="sebeb3">Səbəb 3</option>
+              <option value="sebeb4">Səbəb 4</option>
+            </select>
+          </div>
+          <br>
+      
+          <div class="form-group">
+              <label for="email">Email</label> <br>
+              <input type="email" id="email" formControlName="email" required> <br> <br>
+          </div>
+      
+          <button  type="submit">Göndər</button>
+        </form>
+      </div>
+
+      
+     
+    </div>
+    
+    <div class="img-area">
+      <div class="img-box">
+        <img class="bg" src="../assets/img/bacground.png" alt="">
+        <img class="car" src="../assets/img/bmw.png" alt="">
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+
+
